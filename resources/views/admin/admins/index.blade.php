@@ -19,11 +19,11 @@
                     <div class="card-header">
                         <h3 class="card-title">Admins</h3>
 
-                        @can('CreateUsers')
+                        {{--@can('CreateUsers')--}}
                         <a style="padding: 10px" href="{{route('admins.create')}}"  CLASS="col-lg-3 pull-right btn btn-success">
                             <i class="fa fa-user-plus" style="padding-right: 10px"></i>Add New Admin
                         </a>
-                        @endcan
+                        {{--@endcan--}}
 
                     </div>
 
@@ -42,16 +42,16 @@
                                 <th>Admin Name</th>
                                 <th>Status</th>
                                 <th>Assigned Roles</th>
-                                @can('EditUsers')
+                                {{--@can('EditUsers')--}}
 
                                     <th>Edit</th>
 
-                                @endcan
-                                @can('DeleteUsers')
+                                {{--@endcan--}}
+{{--                                @can('DeleteUsers')--}}
 
                                     <th>Delete</th>
 
-                                @endcan
+                                {{--@endcan--}}
                             </tr>
                             </thead>
                             <tbody>
@@ -64,12 +64,12 @@
                                         <td>{{$admin->name}}</td>
                                         <td>{{$admin->status == 1 ? 'Active': 'Not Active' }}</td>
                                         <td> {{$admin->roles()->pluck('name')->implode(' | ')}}</td>
-                                        @can('EditUsers')
+{{--                                        @can('EditUsers')--}}
 
                                             <td><a href="{{route('admins.edit', $admin->id)}}"><span class="fa fa-edit"></span></a></td>
 
-                                        @endcan
-                                        @can('DeleteUsers'))
+                                        {{--@endcan--}}
+{{--                                        @can('DeleteUsers'))--}}
                                             <td>
 
                                                 <form method="post" id="delete-form-{{$admin->id}}" action="{{route('admins.destroy', $admin->id)}}">
@@ -86,7 +86,7 @@
                                                         {event.preventDefault();}">
                                                     <span class="text-center fa fa-trash" ></span></a>
                                             </td>
-                                        @endcan
+                                        {{--@endcan--}}
                                     </tr>
                                 @endforeach
                             @endif
@@ -99,16 +99,16 @@
                                 <th>Admin Name</th>
                                 <th>Status</th>
                                 <th>Assigned Roles</th>
-                                @can('EditUsers')
+                                {{--@can('EditUsers')--}}
 
                                     <th>Edit</th>
 
-                                @endcan
-                                @can('DeleteUsers')
+                                {{--@endcan--}}
+{{--                                @can('DeleteUsers')--}}
 
                                     <th>Delete</th>
 
-                                @endcan
+                                {{--@endcan--}}
                             </tr>
                             </tfoot>
                         </table>

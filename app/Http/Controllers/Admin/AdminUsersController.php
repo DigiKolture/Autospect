@@ -29,15 +29,15 @@ class AdminUsersController extends Controller
     public function create(){
 
 
-        if(auth('admin')->user()->hasPermissionTo('CreateUsers')){
+//        if(auth('admin')->user()->hasPermissionTo('CreateUsers')){
 
             $roles = Role::all();
 
             return view('admin.admins.create', compact('roles'));
 
-        }
+//        }
 
-        return back();
+//        return back();
 
 
     }
@@ -121,7 +121,7 @@ class AdminUsersController extends Controller
     {
         //
 
-        if(auth('admin')->user()->hasPermissionTo('EditUsers')) {
+//        if(auth('admin')->user()->hasPermissionTo('EditUsers')) {
 
             $admin = Admin::find($id);
 
@@ -129,9 +129,9 @@ class AdminUsersController extends Controller
 
             return view('admin.admins.edit', compact('admin', 'roles'));
 
-        }
+//        }
 //
-        return back();
+//        return back();
     }
 
     /**
