@@ -4,7 +4,7 @@
             <ul class="contact-details-list">
                 <li class="sl-small-location-map">
                     <p>Lagos, Nigeria:<br>
-                        83 Ojuelegba road, surulere</p>
+                        11, Bajulaiye Compound, Somolu</p>
                 </li>
             </ul>
         </div>
@@ -12,18 +12,18 @@
             <ul class="contact-details-list">
                 <li class="sl-small-phone-circle">
                     <p>Feel Free to Call Us Now<br>
-                        (+234) 808 951 1108</p>
+                        (+234) 810 031 4596</p>
                 </li>
             </ul>
         </div>
-        <div class="column column-1-3">
-            <ul class="contact-details-list">
-                <li class="sl-small-truck-tow">
-                    <p>24/7 Emergency Number<br>
-                        121</p>
-                </li>
-            </ul>
-        </div>
+        {{--<div class="column column-1-3">--}}
+            {{--<ul class="contact-details-list">--}}
+                {{--<li class="sl-small-truck-tow">--}}
+                    {{--<p>24/7 Emergency Number<br>--}}
+                        {{--121</p>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
+        {{--</div>--}}
     </div>
     <div class="row row-4-4 top-border page-padding-top">
         <div class="column column-1-4">
